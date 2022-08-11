@@ -1,0 +1,18 @@
+div.modall.form_modal
+            div.modal_wrapper
+                span.close_modall x
+                div.image
+                    img(src="./css/images/candle.png" alt="")
+                h1 Forward Your Message
+                form(action="sended" method="POST")
+                    div.form-group
+                        input(type="text" name="Fullname" placeholder="Let us know your full name..")
+                    div.form-group
+                        input(type="text" name="email" placeholder="Let us know your e-mail..")
+                    div.form-group
+                        label.d-block(for="date") Tell us the time...
+                        input.d-block(id="date" name="date" type="date")
+                    div.form-group
+                        textarea(name="message" id="" cols="30" rows="10" placeholder="What is your message" maxlength="1000")
+                    div.form-group
+                        button(type="submit") Share With Us
